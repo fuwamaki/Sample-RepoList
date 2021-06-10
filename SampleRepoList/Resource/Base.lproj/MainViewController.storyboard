@@ -31,17 +31,60 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAF-2s-DNr">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="PMX-Ih-eSs">
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="56"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aL5-D8-8th">
+                                        <rect key="frame" x="342" y="0.0" width="72" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="7ia-HB-ujH"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="検索"/>
+                                        <connections>
+                                            <action selector="clickSearchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RXf-z2-zon"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="L89-ZV-Lof">
+                                <rect key="frame" x="0.0" y="144" width="414" height="752"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="L89-ZV-Lof" secondAttribute="bottom" id="CRI-30-j64"/>
+                            <constraint firstItem="dAF-2s-DNr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FkG-eK-r8I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dAF-2s-DNr" secondAttribute="trailing" id="PXh-Xs-SaM"/>
+                            <constraint firstItem="L89-ZV-Lof" firstAttribute="top" secondItem="dAF-2s-DNr" secondAttribute="bottom" id="dWu-EL-vdO"/>
+                            <constraint firstItem="dAF-2s-DNr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rpN-Ku-BIB"/>
+                            <constraint firstItem="L89-ZV-Lof" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vZe-mm-v2U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L89-ZV-Lof" secondAttribute="trailing" id="xOt-r7-s8F"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Search Github Repository" largeTitleDisplayMode="always" id="cTd-YZ-Z3b"/>
+                    <connections>
+                        <outlet property="searchBar" destination="PMX-Ih-eSs" id="4KJ-hH-S6p"/>
+                        <outlet property="tableView" destination="L89-ZV-Lof" id="WAS-f3-cpq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122" y="133"/>
+            <point key="canvasLocation" x="121.73913043478262" y="132.58928571428572"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
