@@ -21,8 +21,8 @@ class MainViewController: UIViewController {
             tableView.registerForCell(MainTableCell.self)
             tableView.delegate = self
             tableView.dataSource = self
-//            tableView.tableFooterView = UIView()
-//            tableView.backgroundColor = UIColor.systemBackground
+            tableView.tableFooterView = UIView()
+            tableView.backgroundColor = UIColor.systemBackground
         }
     }
 
