@@ -22,7 +22,6 @@
 		20F53E942671F27F007C80EA /* APIGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F53E932671F27F007C80EA /* APIGateway.swift */; };
 		20F53E962671F28A007C80EA /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F53E952671F28A007C80EA /* APIClient.swift */; };
 		20F53E982671F2D5007C80EA /* MainTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20F53E972671F2D5007C80EA /* MainTableCell.xib */; };
-		20F53E9A2671F3A7007C80EA /* UIColor+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F53E992671F3A7007C80EA /* UIColor+Addition.swift */; };
 		20F53E9C2671F3B0007C80EA /* UITableView+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F53E9B2671F3B0007C80EA /* UITableView+Addition.swift */; };
 		20F53E9E2671F3BA007C80EA /* UITableViewCell+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F53E9D2671F3BA007C80EA /* UITableViewCell+Addition.swift */; };
 		20F53EA02671F3C3007C80EA /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F53E9F2671F3C3007C80EA /* NibLoadable.swift */; };
@@ -65,7 +64,6 @@
 		20F53E932671F27F007C80EA /* APIGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGateway.swift; sourceTree = "<group>"; };
 		20F53E952671F28A007C80EA /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		20F53E972671F2D5007C80EA /* MainTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableCell.xib; sourceTree = "<group>"; };
-		20F53E992671F3A7007C80EA /* UIColor+Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Addition.swift"; sourceTree = "<group>"; };
 		20F53E9B2671F3B0007C80EA /* UITableView+Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Addition.swift"; sourceTree = "<group>"; };
 		20F53E9D2671F3BA007C80EA /* UITableViewCell+Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Addition.swift"; sourceTree = "<group>"; };
 		20F53E9F2671F3C3007C80EA /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
@@ -187,7 +185,6 @@
 		20F53E892671E18C007C80EA /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				20F53E992671F3A7007C80EA /* UIColor+Addition.swift */,
 				20F53E9B2671F3B0007C80EA /* UITableView+Addition.swift */,
 				20F53E9D2671F3BA007C80EA /* UITableViewCell+Addition.swift */,
 				20F53E9F2671F3C3007C80EA /* NibLoadable.swift */,
@@ -346,7 +343,6 @@
 				20F53E5A2671E122007C80EA /* SceneDelegate.swift in Sources */,
 				20F53E922671F231007C80EA /* GithubRepoOwner.swift in Sources */,
 				20F53E8B2671F1F5007C80EA /* MainTableCell.swift in Sources */,
-				20F53E9A2671F3A7007C80EA /* UIColor+Addition.swift in Sources */,
 				20F53E942671F27F007C80EA /* APIGateway.swift in Sources */,
 				20F53EA02671F3C3007C80EA /* NibLoadable.swift in Sources */,
 				20F53E962671F28A007C80EA /* APIClient.swift in Sources */,
