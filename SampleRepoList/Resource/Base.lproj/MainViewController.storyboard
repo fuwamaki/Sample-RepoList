@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="-638" y="133"/>
         </scene>
-        <!--Search Github Repository-->
+        <!--Github Repository-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="SampleRepoList" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,18 +35,18 @@
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAF-2s-DNr">
                                 <rect key="frame" x="0.0" y="88" width="414" height="56"/>
                                 <subviews>
-                                    <searchBar contentMode="redraw" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="PMX-Ih-eSs">
-                                        <rect key="frame" x="0.0" y="0.0" width="342" height="56"/>
+                                    <searchBar contentMode="redraw" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" placeholder="keyword" translatesAutoresizingMaskIntoConstraints="NO" id="PMX-Ih-eSs">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="56"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aL5-D8-8th">
-                                        <rect key="frame" x="342" y="0.0" width="72" height="56"/>
+                                        <rect key="frame" x="334" y="0.0" width="80" height="56"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="7ia-HB-ujH"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="7ia-HB-ujH"/>
                                         </constraints>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="検索"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Search"/>
                                         <connections>
                                             <action selector="clickSearchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RXf-z2-zon"/>
                                         </connections>
@@ -70,7 +70,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L89-ZV-Lof" secondAttribute="trailing" id="xOt-r7-s8F"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Search Github Repository" largeTitleDisplayMode="always" id="cTd-YZ-Z3b"/>
+                    <navigationItem key="navigationItem" title="Github Repository" largeTitleDisplayMode="always" id="cTd-YZ-Z3b"/>
                     <connections>
                         <outlet property="searchBar" destination="PMX-Ih-eSs" id="4KJ-hH-S6p"/>
                         <outlet property="tableView" destination="L89-ZV-Lof" id="WAS-f3-cpq"/>
