@@ -9,7 +9,7 @@ import UIKit
 
 extension UITableViewCell {
 
-    class func defaultHeight(_ tableView: UITableView) -> CGFloat {
+    static var defaultHeight: CGFloat {
         return 60.0
     }
 

@@ -46,6 +46,12 @@ class MainTableCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+
+    public func render(repo: GithubRepo) {
+        iconImageUrl = repo.owner.avatarUrl
+        title = repo.fullName
+        subTitle = String(repo.stargazersCount)
+    }
 }
 
 extension MainTableCell: NibLoadable {}

@@ -91,7 +91,7 @@ class MainViewController: UIViewController {
 // MARK: UITableViewDelegate
 extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return MainTableCell.defaultHeight(tableView)
+        return MainTableCell.defaultHeight
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -110,9 +110,7 @@ extension MainViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueCellForIndexPath(indexPath) as MainTableCell
-        cell.iconImageUrl = repositories[indexPath.row].owner.avatarUrl
-        cell.title = repositories[indexPath.row].fullName
-        cell.subTitle = String(repositories[indexPath.row].stargazersCount)
+        cell.render(repo: repositories[indexPath.row])
         return cell
     }
 }
